@@ -1,0 +1,36 @@
+.spacing-guide__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; 
+    margin-bottom: 30px;
+}
+
+.spacing-guide__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+
+}
+
+.spacing-guide__text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.spacing-guide__img:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.spacing-guide__block {
+    border: 1px solid #000;
+    margin-bottom: 30px;
+}
+
+.spacing-guide__block p {
+    margin-bottom: 15px;
+}
+
+.spacing-guide__text:last-child {
+    margin-bottom: 50px;
+} 

@@ -1,0 +1,23 @@
+.article {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.article__title {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 30px;
+}
+
+.article__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.article__text:not(:last-child) {
+    margin-bottom: 30px;
+}
