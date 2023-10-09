@@ -25,3 +25,10 @@
 .summary__item:last-child {
     margin-bottom: 30px;
 }
+
+.summary__container {
+    max-width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Roboto";
+}

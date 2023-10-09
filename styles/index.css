@@ -1,8 +1,8 @@
 @import "/styles/normalize.css";
-@import "/styles/style.css";
 @import "/article/article.css";
 @import "/contents/contents.css";
 @import "/margin-principle/margin-principle.css";
 @import "/spacing-guide/spacing-guide.css";
 @import "/last-element/last-element.css";
 @import "/summary/summary.css";
+@import "/styles/style.css";

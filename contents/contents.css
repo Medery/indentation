@@ -24,4 +24,11 @@
     font-weight: 400;
     line-height: 120%;
     text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.contents__container {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-family: "Roboto";
 }
