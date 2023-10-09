@@ -6,7 +6,7 @@
     <link rel="icon" href="img/logo.svg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -37,14 +37,14 @@
        </section>
        <section class="margin-principles">
         <h2 class="margin-principles__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
-        <img src="/margin-principle/margin-principle-img/margin-principle-img1.png" alt="Первый пример" class="margin-principles__img">
+        <img src="margin-principle/margin-principle-img/margin-principle-img1.png" alt="Первый пример" class="margin-principles__img">
         <div class="margin-principles__block">
             <p class="margin-principles__text"><b>ВАЖНО:</b> margin всегда задают от предыдущего элемента к следующему.</p>
             <p class="margin-principles__text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.</p>
             <p class="margin-principles__text">(!) Свойства margin-left и margin-top используются крайне редко.</p>
             <p class="margin-principles__text">Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
         </div>
-        <img src="/margin-principle/margin-principle-img/margin-principle-img2.png" alt="второй пример" class="margin-principles__img">
+        <img src="margin-principle/margin-principle-img/margin-principle-img2.png" alt="второй пример" class="margin-principles__img">
         <div class="margin-principles__block">
             <p class="margin-principles__text">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
             <p class="margin-principles__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
@@ -56,34 +56,34 @@
             Отступ задается последнему возможному элементу в DOM-дереве
         </h2>
         <p class="spacing-guide__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-        <img src="/spacing-guide/spacing-guide-img/spacing-guide-img1.png" alt="" class="spacing-guide__img">
-        <img src="/spacing-guide/spacing-guide-img/spacing-guide-img2.png" alt="" class="spacing-guide__img center-img">
+        <img src="spacing-guide/spacing-guide-img/spacing-guide-img1.png" alt="" class="spacing-guide__img">
+        <img src="spacing-guide/spacing-guide-img/spacing-guide-img2.png" alt="" class="spacing-guide__img center-img">
         <p class="spacing-guide__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
         <div class="spacing-guide__block">
-            <img src="/spacing-guide/spacing-guide-img/spacing-guide-img3.png" alt="" class="spacing-guide__img">
+            <img src="spacing-guide/spacing-guide-img/spacing-guide-img3.png" alt="" class="spacing-guide__img">
             <p class="spacing-guide__text"><b>ВАЖНО:</b> здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
         </div>
         <p class="spacing-guide__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p> 
         <p class="spacing-guide__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-        <img src="/spacing-guide/spacing-guide-img/spacing-guide-img4.png" alt="" class="spacing-guide__img center-img">
+        <img src="spacing-guide/spacing-guide-img/spacing-guide-img4.png" alt="" class="spacing-guide__img center-img">
         <p class="spacing-guide__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
-        <img src="/spacing-guide/spacing-guide-img/spacing-guide-img5.png" alt="" class="spacing-guide__img center-img">
+        <img src="spacing-guide/spacing-guide-img/spacing-guide-img5.png" alt="" class="spacing-guide__img center-img">
         <p class="spacing-guide__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
        </section>
        <section class="last-element">
         <h2 class="last-element__title">Для последнего элемента группы отступ всегда обнуляется</h2>
         <p class="last-element__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="last-element__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
-        <img src="/last-element/last-element-img/last-element-img1.png" alt="" class="last-element__img center-img">
+        <img src="last-element/last-element-img/last-element-img1.png" alt="" class="last-element__img center-img">
         <p class="last-element__text">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
-        <img src="/last-element/last-element-img/last-element-img2.png" alt="" class="last-element__img center-img">
-        <img src="/last-element/last-element-img/last-element-img3.png" alt="" class="last-element__img">
-        <img src="/last-element/last-element-img/last-element-img4.png" alt="" class="last-element__img">
+        <img src="last-element/last-element-img/last-element-img2.png" alt="" class="last-element__img center-img">
+        <img src="last-element/last-element-img/last-element-img3.png" alt="" class="last-element__img">
+        <img src="last-element/last-element-img/last-element-img4.png" alt="" class="last-element__img">
         <p class="last-element__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-        <img src="/last-element/last-element-img/last-element-img5.png" alt="" class="last-element__img">
-        <img src="/last-element/last-element-img/last-element-img6.png" alt="" class="last-element__img center-img">
+        <img src="last-element/last-element-img/last-element-img5.png" alt="" class="last-element__img">
+        <img src="last-element/last-element-img/last-element-img6.png" alt="" class="last-element__img center-img">
         <p class="last-element__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-        <img src="/last-element/last-element-img/last-element-img7.png" alt="" class="last-element__img center-img">
+        <img src="last-element/last-element-img/last-element-img7.png" alt="" class="last-element__img center-img">
         <p class="last-element__text">Советую использовать псевдоклассы :last-child чаще других, например так:
         </p>
         <img src="last-element/last-element-img/last-element-img8.png" alt="" class="last-element__img center-img">
