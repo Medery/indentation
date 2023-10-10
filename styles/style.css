@@ -98,5 +98,8 @@ html {
 .center-img {
   display: block;
   margin: 0 auto;
+}
+
+.center-img:not(:last-child) {
   margin-bottom: 30px;
 }

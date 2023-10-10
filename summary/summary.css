@@ -1,8 +1,11 @@
 .summary {
+    margin-bottom: 50px;
+}
+
+.summary__block {
     border-radius: 10px;
     background: #F1F1F1;
     padding: 25px 30px 25px 45px;
-    margin-bottom: 50px;
 }
 
 .summary__title {
@@ -18,11 +21,11 @@
     line-height: 120%;
 }
 
-.summary__item {
+.summary__item:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.summary__item:last-child {
+.summary__list {
     margin-bottom: 30px;
 }
 

@@ -1,3 +1,12 @@
+.contents {
+    margin-bottom: 50px;
+}
+
+.contents__list {
+    margin: 0;
+    
+}
+
 .contents__block {
     border-radius: 10px;
     background: #F1F1F1;
@@ -7,13 +16,13 @@
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 45px;
-    margin-bottom: 50px;
 }
 
 .contents__title {
     font-size: 44px;
     font-weight: 700;
     line-height: 120%;
+    margin-bottom: 20px;
     
 }
 
@@ -24,6 +33,9 @@
     font-weight: 400;
     line-height: 120%;
     text-decoration: underline;
+}
+
+.contents__item:not(:last-child) {
     margin-bottom: 10px;
 }
 

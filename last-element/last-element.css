@@ -1,3 +1,7 @@
+.last-element {
+    margin-bottom: 50px;
+}
+
 .last-element__title {
     font-size: 36px;
     font-weight: 900;
